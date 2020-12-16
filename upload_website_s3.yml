@@ -1,0 +1,12 @@
+---
+
+- hosts: local
+  tasks:
+    -
+      name: Upload all static files into a S3 bucket
+      command:
+        cmd: ls -l
+    -
+      name: Update cloudfront in front of S3 bucket
+      command:
+        cmd: ls -l
