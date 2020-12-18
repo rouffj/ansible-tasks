@@ -2,15 +2,12 @@
 
 - hosts: local
   tasks:
-    -
-      name: dump the DB into a file on the remote server
+    - name: dump the DB into a file on the remote server
       command:
         cmd: ls -l
-    -
-      name: download the sql file from remote server -> local
+    - name: download the sql file from remote server -> local
       command:
         cmd: ls -l
-    -
-      name: Upload sql file from local into S3 bucket
+    - name: Upload sql file from local into S3 bucket
       command:
         cmd: ls -l
