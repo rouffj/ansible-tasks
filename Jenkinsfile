@@ -1,16 +1,4 @@
 pipeline {
-    
-    stages {
-        stage('Test') {
-            steps {
-                sh 'node --version'
-                sh 'ls -la'
-            }
-        }
-    }
-}
-
-pipeline {
     agent any
     /*
     agent {
