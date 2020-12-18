@@ -7,11 +7,13 @@ pipeline {
     */
 
     stages {
+    /*
         stage('Lint') {
             steps {
                 sh 'ansible-lint'
             }
         }
+    */
 
         stage('Tests') {
             steps {
@@ -19,6 +21,7 @@ pipeline {
             }
         }
 
+        input "Should I continue?"
         stage('Deploy') {
             steps {
                 echo 'Deploying'
