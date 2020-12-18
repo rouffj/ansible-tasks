@@ -19,9 +19,11 @@ pipeline {
             steps {
                 echo 'Testing'
             }
+            input {
+                message "Should I continue?"
+            }
         }
 
-        input "Should I continue?"
         stage('Deploy') {
             steps {
                 echo 'Deploying'
