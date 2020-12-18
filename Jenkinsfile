@@ -9,16 +9,16 @@ pipeline {
     stages {
         stage('Lint') {
             steps {
-                echo 'ansible-lint'
+                sh 'ansible-lint'
             }
         }
-        
+
         stage('Tests') {
             steps {
                 echo 'Testing'
             }
         }
-        
+
         stage('Deploy') {
             steps {
                 echo 'Deploying'
