@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Lint') {
             steps {
-                echo 'Linting'
+                echo 'ansible-lint'
             }
         }
         
